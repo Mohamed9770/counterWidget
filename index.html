@@ -6,29 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <script src="code.js" defer></script>
-    <script src="calculate.js" defer></script>
-    
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
 <body>
+    <div class="count">
     <h1>Counter Widget</h1>
-    <div class="message">
-
-    </div>
-    
-  
     
     <hr>
-    <script src="//unpkg.com/alpinejs" defer></script>
- 
+   
     <div x-data="{counter : 0}">
         <h2>Increment/decrement with AlpineJS</h2>
-        <div x-text="counter">
-            0
-        </div>
+        <div x-text="counter">0</div>
+            
+        
         <button x-on:click="counter++">Increment</button>
         <button x-on:click="if (counter > 0) counter--">Decrement</button>
+
+    </div>
     </div>
 </body>
 </html>
